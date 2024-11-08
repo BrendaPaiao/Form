@@ -1,9 +1,7 @@
 import express from 'express';
-import path from 'path';
 
 const app = express();
 
-app.use(express.static(path.resolve() + '/Imagens'));
 app.use(express.urlencoded({extend: true}));
 
 const porta = 3000;
